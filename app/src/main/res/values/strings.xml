@@ -1,0 +1,31 @@
+<!--
+  ~ /**
+  ~  * Created by Ali YÜCE on 3/2/20 11:18 PM
+  ~  * https://github.com/mayuce/
+  ~  * Copyright (c) 2020 . All rights reserved.
+  ~  * Last modified 3/2/20 11:17 PM
+  ~  */
+  -->
+
+<resources>
+    <string name="app_name">Pdf4me</string>
+
+    <string name="label_brush">Brush</string>
+    <string name="label_emoji">Emoji</string>
+    <string name="label_sticker">Sticker</string>
+    <string name="label_eraser">Eraser</string>
+    <string name="label_eraser_mode">Eraser Mode</string>
+    <string name="label_text">Text</string>
+    <string name="label_filter">Filter</string>
+    <string name="label_adjust">Adjust</string>
+    <string name="msg_save_image">Are you want to exit without saving image ?</string>
+    <string name="app_intent_name">PhotoEditor</string>
+    <string name="msg_save_image_to_share">Please save image to share</string>
+    <string name="msg_share_image">Share Image</string>>
+
+
+    <string name="string_permission_help">Help</string>
+    <string name="string_permission_help_text">The permission is missing.\n\nTo grant this permission click on Settings, then Permissions and turn the permission on.\n\nThen click back twice to return to the app</string>
+    <string name="string_permission_quit">Exit App</string>
+    <string name="string_settings">Settings</string>
+</resources>

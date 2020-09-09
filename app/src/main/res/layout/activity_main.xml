@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Ali YÜCE on 3/2/20 11:18 PM
+  ~  * https://github.com/mayuce/
+  ~  * Copyright (c) 2020 . All rights reserved.
+  ~  * Last modified 3/2/20 11:17 PM
+  ~  */
+  -->
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/btnPick"
+            android:background="@color/raspeberry"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Pick an Image"
+            android:visibility="gone"
+            android:padding="50dp"
+            android:layout_centerInParent="true"/>
+
+    <ImageView
+            android:id="@+id/imgBitmap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/idlayoutbottom"
+            android:src="@mipmap/ic_launcher"
+               android:visibility="visible"
+    />
+
+
+    <LinearLayout
+            android:id="@+id/idlayoutbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/pick_next_image"
+                android:background="@color/raspeberry"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_weight=".5"
+                android:layout_marginRight="2dp"
+                android:text="Add Image"
+                />
+
+
+        <Button
+                android:id="@+id/view_images"
+                android:background="@color/raspeberry"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_weight=".5"
+                android:layout_marginLeft="2dp"
+                android:text="View Images"
+                />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/idlayoutcameragalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:id="@+id/idaddimages"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight=".5"
+                android:src="@drawable/ic_camera"
+                android:layout_gravity="center"
+                android:tint="@color/white"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorAccent"
+                />
+
+        <ImageView
+                android:id="@+id/idcreatepdf"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight=".5"
+                android:tint="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:background="@color/colorAccent"
+                android:src="@drawable/gallery_con"
+                />
+    </LinearLayout>
+
+
+    <TextView
+            android:id="@+id/noimagesfound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No  Image Added To create PDF"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:visibility="visible" />
+
+
+</RelativeLayout>

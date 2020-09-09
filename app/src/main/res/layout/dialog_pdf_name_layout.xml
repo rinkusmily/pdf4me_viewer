@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="CREATE PDF"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:background="@color/colorAccent"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height= "wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="#888787"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Enter PDF Name"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/et"
+                android:paddingLeft="10dp"
+                android:hint="Enter name"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_edittext"/>
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:weightSum="1"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btnok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="OK"
+                    android:background="@color/green_color_picker"
+                    android:layout_weight=".5"
+                    android:textColor="#ffffffff" />
+
+            <Button
+                    android:id="@+id/btncn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Cancel"
+                    android:background="@color/colorAccent"
+                    android:layout_weight=".5"
+                    android:textSize="20sp"
+                    android:textColor="#ffffffff" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+

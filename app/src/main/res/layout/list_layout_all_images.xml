@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+            android:id="@+id/idimages"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="3dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/original" />
+
+    <ImageView
+            android:id="@+id/id_delete_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/ovelshape"
+            android:padding="2dp"
+            android:src="@drawable/ic_close_black_24dp" />
+
+    <ImageView
+            android:id="@+id/id_edit_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/id_delete_image"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="45dp"
+            android:padding="2dp"
+            android:background="@drawable/ovelshape"
+            android:src="@drawable/ic_mode_edit_black_24dp" />
+
+    <TextView
+            android:id="@+id/idpagenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="20dp"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+</RelativeLayout>
